@@ -31,7 +31,7 @@ export default function TemperatureChart({ data, cityName }: TemperatureChartPro
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
           <XAxis dataKey="time" tick={{ fontSize: 11 }} interval={2} />
           <YAxis unit="°C" tick={{ fontSize: 11 }} />
-          <Tooltip formatter={(v: number) => [`${v}°C`, "Temperatura"]} />
+          <Tooltip formatter={(v) => [`${v}°C`, "Temperatura"]} />
           <Line
             type="monotone"
             dataKey="temperature"
